@@ -5,7 +5,7 @@ class Product {
     public $price;
     public $loyalty_points;
 
-    function __construct($ward, $price, $loyalty_points)
+    function __construct($_ward, $_price, $_loyalty_points)
     {
         $this->ward = $_ward;
         $this->price = $_price;

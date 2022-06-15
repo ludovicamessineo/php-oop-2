@@ -5,14 +5,14 @@ class Food extends Product {
     public $animal;
     public $type;
 
-    function __construct($ward, $price, $loyalty_points, $animal, $type) {
-        parent::__construct($ward, $price, $loyalty_points);
+    function __construct($_ward, $_price, $_loyalty_points, $_animal, $_type) {
+        parent::__construct($_ward, $_price, $_loyalty_points);
         $this->animal = $_animal;
         $this->type = $_type;
     }
 
     public function printInfo() {
-        return "$this->ward € $this->price $this->loyalty_points $this->animal $this->type";
+        return "Reparto numero: $this->ward / Prezzo: €$this->price / Punti Fedeltà $this->loyalty_points / Tipo di animale: $this->animal /$this->type";
     }
 }
 
